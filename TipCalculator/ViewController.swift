@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var costTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
