@@ -34,6 +34,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="costTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="EHc-aR-eMg"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt9-xx-PQc">
                                 <rect key="frame" x="16" y="224" width="42" height="21"/>
@@ -52,6 +55,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FIM-0s-gcV">
                                 <rect key="frame" x="79" y="219" width="217" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tipSliderChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="DtI-X4-KUo"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-p9-whx">
                                 <rect key="frame" x="16" y="145" width="36" height="21"/>
@@ -79,6 +85,7 @@
                     </view>
                     <connections>
                         <outlet property="costTextField" destination="kzM-4b-pDi" id="bhD-WG-pm8"/>
+                        <outlet property="finalCostLabel" destination="rD9-O4-5b7" id="Eui-af-Orn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
